@@ -1,0 +1,108 @@
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+    flex: 1rem;
+}
+
+/* Navbar */
+.navbar{
+    height: 5rem;
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.fa-brands{
+    color: cadetblue;
+    font-size: 2rem;
+}
+
+.nav-link{
+    color: black !important;
+}
+
+/* footer */
+.f-support{
+    width: 100%;
+}
+
+.f-links{
+    display: flex;
+    width: 100% !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-links{
+    display: flex;
+    width: 100% !important;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.f-container{
+    background: grey;
+    height: 5rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* cards */
+.border-class{
+    border: 1px solid black;
+    border-radius: 1rem;
+    
+    /* margin-right: 0.5px; */
+}
+.paper-card{
+    border: none !important;
+    margin-bottom: 2rem;
+    height: 49vh;
+}
+
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body{
+    padding: 0 !important;
+}
+
+.card-text p{
+    font-weight: 400;
+}
+
+.card a{
+    text-decoration: none;
+    color: black;
+}
+
+card effect */
+ .card-img-overlay{
+    opacity: 0;
+}
+
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* New  */
+/* .new-btn{
+    color: grey !important;
+    background-color: black !important;
+} */
+
+/* Show */
+.btns{
+    display: flex;
+}
+
+.edit-btn{
+    background-color: aquamarine;
+}

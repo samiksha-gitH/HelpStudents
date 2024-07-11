@@ -1,0 +1,54 @@
+<% layout("/layouts/boilerplate.ejs") %>
+<link rel="stylesheet" href="/css/style.css">
+<body>
+        <div class="row">
+            <div class="col-8 offset-2">
+                <h1 class="mt-3">Upload QPaper</h1>
+                <form action="/papers" method="post" novalidate class="needs-validation" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" name="paper[subject]" placeholder="Enter subject" class="form-control">
+                        <div class="valid-feedback">Well Done</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="year" class="form-label">Year</label>
+                                <input type="text" name="paper[year]" placeholder="Enter year" class="form-control"
+                                    required>
+                                <div class="invalid-feedback">Not Done</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="semester" class="form-label">Semester</label>
+                                <input type="text" name="paper[semester]" placeholder="Enter semester"
+                                    class="form-control" required>
+                                <div class="invalid-feedback">Not Done</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="university" class="form-label">University</label>
+                        <input type="text" name="paper[university]" placeholder="Enter university" class="form-control"
+                            required>
+                        <div class="invalid-feedback">Not Done</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="college" class="form-label">College</label>
+                        <input type="text" name="paper[college]" placeholder="Enter college" class="form-control"
+                            required>
+                        <div class="invalid-feedback">Not Done</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="image" class="form-label">Upload Image</label>
+                        <input type="file" name="paper[image]" class="form-control" >
+                        <div class="invalid-feedback">Not Done</div>
+                    </div>
+                    
+                    <button class="btn btn-dark">Add</button>
+                </form>
+            </div>
+        </div>
+    </body><script src="/js/script.js"></script>
